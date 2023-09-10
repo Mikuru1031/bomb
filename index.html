@@ -6,14 +6,16 @@
         <link rel="stylesheet" href="./assets/style.css">
         <title>爆弾</title>
     </head>
-    <body >
+    <body>
         <div id="permissionBtn" style="background-color: gray;">
             <p style="font-size: 15px;">タップしてセンサーの使用を許可してね</p>
         </div>
         <div>
             <img src="./images/bakudan.png">
-            <p id="test"></p>
         </div>
     </body>
     <script src="./assets/script.js"></script>
+    <script>
+        document.addEventListener("dblclick", function(e){ e.preventDefault();}, { passive: false });
+    </script>
 </html>
